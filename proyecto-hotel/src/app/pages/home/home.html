@@ -1,1 +1,9 @@
 <p>home works!</p>
+<div>
+    <ul>
+        <li *ngFor="let room of rooms; index as i">
+            <p style="color:black">{{room.precio}}</p>
+                <img [src]="room.imagenHabitacion" [alt]="room.numero" width="200" height="150" />
+        </li>
+    </ul>
+</div>
